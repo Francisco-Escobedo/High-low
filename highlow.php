@@ -13,6 +13,9 @@ do {
         echo "HIGHER\n";
     } elseif ($response == $num){
         echo "GOOD GUESS!\n";
+        echo "To exit game, press Control + C\n";
+        echo "See you next time!\n";
+        
     }
 } while ($response !== $num);
 
