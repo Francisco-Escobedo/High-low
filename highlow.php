@@ -3,7 +3,7 @@
 $low = $argv[1];
 $high = $argv[2];
 
-if (is_numeric($low) == true && is_numeric($high)){
+if (((is_numeric($low) == true) && (is_numeric($high) == true)) && ($argc >= 3)) {
     if ($low < $high){
 
         $num = mt_rand($low, $high);
@@ -28,5 +28,5 @@ if (is_numeric($low) == true && is_numeric($high)){
         echo "Please ensure the first value is MINIMUM while second value is MAXIMUM\n";
     }
 } else { 
-    echo "Arguments must be numeric and in order of lowest possible random number followed by highest possible random number.\n";
+    echo "Be sure to enter two numerical arguments that are numeric and in order of lowest possible random number followed by highest possible random number.\n";
 }
